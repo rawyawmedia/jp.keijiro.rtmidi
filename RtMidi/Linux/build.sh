@@ -7,3 +7,5 @@ gcc -Wall \
     -lstdc++ \
     -lasound \
     -shared -o libRtMidi.so
+
+cp libRtMidi.so ../../Packages/jp.keijiro.rtmidi/Runtime/Linux/

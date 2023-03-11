@@ -12,3 +12,5 @@ gcc -target x86_64-apple-macos10.12 $ARGS -o x86_64.so
 gcc -target  arm64-apple-macos10.12 $ARGS -o arm64.so
 
 lipo -create -output RtMidi.bundle x86_64.so arm64.so
+
+cp -r RtMidi.bundle ../../Packages/jp.keijiro.rtmidi/Runtime/macOS/
